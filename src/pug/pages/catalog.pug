@@ -1,0 +1,84 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var bildboard_img = "background-image:url(./image/bildbg/bg4.jpg)";
+	- var bildboard_title = "Для дома и участка";
+	- var bildboard_quote = "уют и комфорт";
+	- var bildboard_text = "А ещё реплицированные с зарубежных источников, а также современные исследования освещают чрезвычайно интересные огни.";
+	- var bildboard_type = "catalog";
+
+
+block content
+	include ../modules/bildboard
+
+	.catalog
+		.catalog__container.container
+			.catalog__cover
+				.catalog__items 
+					.catalog__item 
+						section.catalog__bloc 
+							.catalog__pic
+								//- p1-mobile.png
+								<picture>
+									<source srcset="/image/catalog/p1.png" media="(min-width: 1025px)">
+									<source media="(min-width: 621px)" srcset="/image/catalog/p1-tablet.png">
+									<source media="(min-width: 320px)" srcset="/image/catalog/p1-mobile.png">
+									<img src="/image/catalog/p1.png" alt="MDN">
+								</picture>
+							.catalog__info
+								h4.catalog__header.title-4 Мебель
+								.catalog__text Это действие проводится профессионалами, имеющими опыт.
+								a(href="subcategory.html").link.link--detail Подробнее
+						section.catalog__bloc 
+							.catalog__pic
+								<picture>
+									<source srcset="/image/catalog/p5.png" media="(min-width: 1025px)">
+									<source media="(min-width: 621px)" srcset="/image/catalog/p5-tablet.png">
+									<source media="(min-width: 320px)" srcset="/image/catalog/p5-mobile.png">
+									<img src="/image/catalog/p5.png" alt="MDN">
+								</picture>
+							.catalog__info
+								h4.catalog__header.title-4 Благоустройство участка
+								.catalog__text Это действие проводится профессионалами, имеющими опыт работы в данной сфере.
+								a(href="subcategory.html").link.link--detail Подробнее
+						section.catalog__bloc 
+							.catalog__pic
+								<picture>
+									<source srcset="/image/catalog/p4.png" media="(min-width: 1025px)">
+									<source media="(min-width: 621px)" srcset="/image/catalog/p4-tablet.png">
+									<source media="(min-width: 320px)" srcset="/image/catalog/p4-mobile.png">
+									<img src="/image/catalog/p4.png" alt="MDN">
+								</picture>
+							.catalog__info
+								h4.catalog__header.title-4 Заборы и&nbsp;ограждения
+								.catalog__text Это действие проводится профессионалами, имеющими опыт.
+								a(href="subcategory.html").link.link--detail Подробнее
+					.catalog__item 
+						section.catalog__bloc 
+							.catalog__pic
+								<picture>
+									<source srcset="/image/catalog/p2.png" media="(min-width: 1025px)">
+									<source media="(min-width: 621px)" srcset="/image/catalog/p2-tablet.png">
+									<source media="(min-width: 320px)" srcset="/image/catalog/p2-mobile.png">
+									<img src="/image/catalog/p2.png" alt="MDN">
+								</picture>
+							.catalog__info
+								h4.catalog__header.title-4 Лестничные конструкции
+								.catalog__text Это действие проводится профессионалами, имеющими опыт.
+								a(href="subcategory.html").link.link--detail Подробнее
+						section.catalog__bloc 
+							.catalog__pic
+								<picture>
+									<source srcset="/image/catalog/p3.png" media="(min-width: 1025px)">
+									<source media="(min-width: 621px)" srcset="/image/catalog/p3-tablet.png">
+									<source media="(min-width: 320px)" srcset="/image/catalog/p3-mobile.png">
+									<img src="/image/catalog/p3.png" alt="MDN">
+								</picture>
+							.catalog__info
+								h4.catalog__header.title-4 Конструкции из&nbsp;габионов
+								.catalog__text Это действие проводится профессионалами, имеющими опыт работы в данной сфере.
+								a(href="subcategory.html").link.link--detail Подробнее
+	include ../modules/quote	
+	include ../modules/call
+block script

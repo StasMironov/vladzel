@@ -1,0 +1,15 @@
+.map {
+    height: 658px;
+    margin-top: 70px;
+    margin-bottom: -90px;
+
+    @media(max-width: 1024px) {
+        margin-top: 60px;
+        height: 614px;
+    }
+
+    @media(max-width: 620px) {
+        margin-top: 51px;
+        height: 562px;
+    }
+}

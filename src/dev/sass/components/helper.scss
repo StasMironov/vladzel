@@ -1,0 +1,42 @@
+.mf-scroll {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    transition: .2s ease-out;
+    padding: 0 calc(var(--wScroll) - (100vw - 100%)) 0 0;
+}
+
+.mf-margin {
+    margin-top: 52px;
+
+    @media(max-width: 1024px) {
+        margin-top: 40px;
+    }
+
+    @media(max-width: 600px) {
+        margin-top: 20px;
+    }
+}
+
+.mf-show {
+    opacity: 1 !important;
+}
+
+.menu-show {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    .header__phone {
+        @media(max-width: 1100px) {
+            display: block;
+        }
+    }
+
+    .marks {
+        @media(max-width: 1100px) {
+            display: flex !important;
+        }
+    }
+}

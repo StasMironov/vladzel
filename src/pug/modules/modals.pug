@@ -1,0 +1,55 @@
+.overlay
+
+.popup-order
+    .popup-order__close
+    .popup-order__header
+        .popup-order__title.title-5 Разместить заказ
+        .popup-order__quote Мы свяжемся с Вами в ближайшее время, чтобы ответить на вопросы и оформить заказ
+    form.popup-order__form
+        input(type="text" placeholder="Ваше Имя" name="name" required).popup-order__field
+        input(type="text" placeholder="Телефон" name="phone" required).popup-order__field.js-mask-phone
+        input(type="text" placeholder="Email" name="email" required).popup-order__field
+        textarea(name="text" placeholder="Пожелания к заказу")
+        a(href="#").popup-order__field.popup-order__field--file#input-file 
+            .popup-order__ic
+                +svg('file')
+            .popup-order__txt Прикрепить файл
+            input(type='file' name="file")#file
+
+        
+        .popup-order__items 
+            .popup-order__item 
+                .popup-order__ic 
+                    <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5094 1.53238H4.41086C2.50419 1.52504 0.941273 3.04488 0.896356 4.95063V14.7709C0.854189 16.7078 2.38961 18.3129 4.32652 18.356C4.35494 18.356 4.38244 18.3569 4.41086 18.356H11.7341C13.6536 18.278 15.1661 16.6922 15.1524 14.7709V6.36871L10.5094 1.53238Z" stroke="#8E979E" stroke-width="1.08349" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.2686 1.52087V4.18746C10.2686 5.48912 11.3209 6.54421 12.6226 6.54787H15.148" stroke="#8E979E" stroke-width="1.08349" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.0965 13.0787H5.14648" stroke="#8E979E" stroke-width="1.08349" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.22184 9.63875H5.14551" stroke="#8E979E" stroke-width="1.08349" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                .popup-order__text Назвение какого-то файла.формат
+                .popup-order__delete
+            .popup-order__item 
+                .popup-order__ic 
+                    <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5094 1.53238H4.41086C2.50419 1.52504 0.941273 3.04488 0.896356 4.95063V14.7709C0.854189 16.7078 2.38961 18.3129 4.32652 18.356C4.35494 18.356 4.38244 18.3569 4.41086 18.356H11.7341C13.6536 18.278 15.1661 16.6922 15.1524 14.7709V6.36871L10.5094 1.53238Z" stroke="#8E979E" stroke-width="1.08349" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.2686 1.52087V4.18746C10.2686 5.48912 11.3209 6.54421 12.6226 6.54787H15.148" stroke="#8E979E" stroke-width="1.08349" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.0965 13.0787H5.14648" stroke="#8E979E" stroke-width="1.08349" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.22184 9.63875H5.14551" stroke="#8E979E" stroke-width="1.08349" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                .popup-order__text Назвение какого-то файла.формат  
+                .popup-order__delete
+        <label class="checkbox">
+            <input type="checkbox">
+            <span>Свяжитесь со мной по WhatsApp или Telegram</span>
+        </label>
+        button(type="submit" value="Отправить заявку").btn.btn--blue Отправить заявку
+        .popup-order__note Отправляя заявку, Вы принимаете условия <a href="javascript:void(0);">пользовательского соглашения</a>
+
+.popup-grace
+    .popup-grace__close
+    .popup-grace__box
+        .popup-grace__pic
+            +svg('heart')
+        .popup-grace__title.title-5 Заявка принята
+        .popup-grace__txt Спасибо! Ваше сообщение оправлено!
+    .btn.btn--blue.btn--transparent.js-modal-close Закрыть

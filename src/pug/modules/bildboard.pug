@@ -1,0 +1,34 @@
+case bildboard_type
+	when 'basic'
+		.bildboard-data.bildboard-data--basic
+				.bildboard-data__container.container
+					.bildboard-data__quote #{bildboard_quote}
+					h1.bildboard-data__title.title-1 #{bildboard_title}
+	when 'catalog' 
+		.bildboard-data.bildboard-data
+				.bildboard-data__container.container
+					.bildboard-data__left
+						h1.bildboard-data__title.title-1 #{bildboard_title}
+						.bildboard-data__quote #{bildboard_quote}
+						.bildboard-data__text #{bildboard_text}
+					.bildboard-data__right
+						.bildboard-data__unique(style=`${bildboard_img}`)
+	when 'subcat'
+		.bildboard-data.bildboard-data--subcat
+			.bildboard-data__container.container
+				.bildboard-data__left
+					h1.bildboard-data__title.title-1 #{bildboard_title}
+					.bildboard-data__quote #{bildboard_quote}
+					.bildboard-data__text #{bildboard_text}
+				.bildboard-data__right
+					.bildboard-data__unique(style=`${bildboard_img}`)
+
+	default
+		.bildboard-data
+				.bildboard-data__container.container
+					.bildboard-data__left
+						h1.bildboard-data__title.title-1 #{bildboard_title}
+						.bildboard-data__quote #{bildboard_quote}
+						.bildboard-data__text #{bildboard_text}
+					.bildboard-data__right
+						.bildboard-data__unique(style=`${bildboard_img}`)

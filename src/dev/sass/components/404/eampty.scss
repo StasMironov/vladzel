@@ -1,0 +1,61 @@
+.eampty {
+    padding-bottom: 40px;
+
+    @media(max-width: 1024px) {
+        padding-bottom: 93px;
+    }
+
+    @media(max-width: 620px) {
+        padding-bottom: 198px;
+    }
+
+    &__box {
+        max-width: 443px;
+        width: 100%;
+        height: 307px;
+        margin: 0 auto;
+        background-position: 50% 79%;
+
+        @media(max-width: 1024px) {
+            background-size: cover;
+            max-width: 466px;
+            height: 342px;
+        }
+
+        @media(max-width: 620px) {
+            max-width: 306px;
+            height: 283px;
+        }
+    }
+
+    &__txt {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 30px;
+
+        @media(max-width: 620px) {
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: 9px;
+        }
+    }
+
+    .btn {
+        max-width: 259px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 81px;
+
+        @media(max-width: 1024px) {
+            max-width: 280px;
+            width: 100%;
+            margin: 71px auto 0;
+        }
+
+        @media(max-width: 620px) {
+            max-width: 229px;
+            margin: 53px auto 0;
+        }
+    }
+}

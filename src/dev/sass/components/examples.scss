@@ -1,0 +1,17 @@
+.examples {
+    margin-top: 60px;
+
+    @media(max-width: 1024px) {
+        margin-top: 50px;
+    }
+
+    @media(max-width: 620px) {
+        margin-top: 43px;
+    }
+
+    &__title {
+        @media(max-width:620px) {
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,214 @@
+.bildboard-data {
+    background-color: $gray;
+
+    @media(max-width: 1024px) {
+        position: relative;
+    }
+
+
+
+    &:after {
+        @media(max-width: 1024px) {
+            position: absolute;
+            content: "";
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 1024px) {
+            min-height: 433px;
+        }
+
+        @media(max-width: 620px) {
+            min-height: 427px;
+        }
+    }
+
+    &__title {
+        text-align: left;
+        line-height: 72px;
+
+        @media(max-width: 1024px) {
+            max-width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        @media(max-width: 620px) {
+            text-align: left;
+            margin: initial;
+            line-height: 56px;
+        }
+    }
+
+    &__quote {
+        font-size: 28px;
+        line-height: 28px;
+        color: $blue-1;
+        font-weight: 600;
+        font-style: italic;
+        font-family: 'Playfair', sans-serif;
+        margin-top: 19px;
+
+        @media(max-width: 1024px) {
+            text-align: center;
+            color: white;
+            margin-top: 12px;
+        }
+
+        @media(max-width: 620px) {
+            letter-spacing: -0.6px;
+            text-align: left;
+            margin-top: 13px;
+            line-height: 38px;
+        }
+    }
+
+    &__text {
+        max-width: 530px;
+        width: 100%;
+        margin-top: 27px;
+
+        @media(max-width: 1024px) {
+            margin: 24px auto 0;
+            text-align: center;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        @media(max-width: 620px) {
+            text-align: left;
+            font-size: 16px;
+            line-height: 26px;
+            margin-left: 0;
+            margin-top: 19px;
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 85px 85px 91px 0;
+
+        @media(max-width: 1024px) {
+            z-index: 1;
+            width: 100%;
+            color: white;
+            padding: 45px 0 54px;
+        }
+
+        @media(max-width: 620px) {
+            padding: 39px 0px 54px;
+        }
+
+    }
+
+    &__right {
+        position: relative;
+        max-width: 666px;
+        width: 100%;
+
+        @media(max-width: 1235px) {
+            max-width: 520px;
+        }
+
+        @media(max-width: 1024px) {
+            max-width: 0;
+        }
+    }
+
+    &__unique {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: calc(100% + 319px);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media(max-width: 1024px) {
+            left: -984px;
+            height: 100%;
+            width: calc(100% + 1024px);
+        }
+    }
+
+    &--basic {
+
+
+        &:after {
+            content: none;
+        }
+
+        .bildboard-data {
+
+            &__quote {
+                color: $blue-1;
+
+                @media(max-width:620px) {
+                    order: 1;
+                    width: 100%;
+                }
+            }
+
+            &__container {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 62px;
+                padding-bottom: 80px;
+
+                @media(max-width: 1024px) {
+                    min-height: initial;
+                }
+
+                @media(max-width: 620px) {
+                    padding-top: 64px;
+                }
+            }
+
+            &__title {
+                margin-top: 24px;
+
+                @media(max-width: 620px) {
+                    width: 100%;
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+
+    &--subcat {
+        .bildboard-data {
+            &__left {
+                padding: 110px 85px 139px 0;
+
+                @media(max-width: 1024px) {
+                    padding: 61px 0px 70px 0;
+                }
+
+                @media(max-width: 620px) {
+                    padding: 42px 0 70px;
+                }
+            }
+
+            // &__quote {
+            //     @media(max-width: 1024px) {
+            //         margin-top: 12px;
+            //     }
+            // }
+        }
+    }
+}

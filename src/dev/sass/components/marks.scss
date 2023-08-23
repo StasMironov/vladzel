@@ -1,0 +1,28 @@
+.marks {
+    display: flex;
+    margin-top: 55px;
+
+    &__mark {
+        height: 41px;
+        width: 41px;
+
+        &:not(:last-child) {
+            margin-right: 23px;
+        }
+
+        &:hover {
+            rect {
+                fill: $orange-2;
+            }
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        rect {
+            transition: .4s ease;
+        }
+    }
+}

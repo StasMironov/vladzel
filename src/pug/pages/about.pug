@@ -1,0 +1,30 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var bildboard_img = "background-image:url(./image/bildbg/bg3.jpg)";
+	- var bildboard_title = "Коротко о нас";
+	- var bildboard_quote = "яркий пример современных тенденций";
+	- var bildboard_text = "Задача организации, в особенности же разбавленное изрядной долей эмпатии, рациональное мышление требует анализа прогресса профессионального сообщества! Равным образом.";
+
+	- var portfolio = 'short';
+	
+
+
+block content
+	include ../modules/bildboard
+
+	.about
+		.about__container.container
+			.about__quote Для современного мира глубокий уровень погружения напрямую зависит от как самодостаточных, так и внешне зависимых концептуальных решений.
+			- var set = 'wide'
+			include ../modules/set
+	section.services
+		.services__container.container
+			h2.services__title.title-2 Технология изготовления
+			- var set = "media"
+			include ../modules/set
+	include ../modules/portfolio
+	include ../modules/comment
+	include ../modules/call
+block script

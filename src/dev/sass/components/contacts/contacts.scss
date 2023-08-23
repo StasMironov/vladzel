@@ -1,0 +1,208 @@
+.contacts {
+    margin-top: 84px;
+
+    @media(max-width: 1024px) {
+        margin-top: 60px;
+    }
+
+    @media(max-width: 620px) {
+        margin-top: 50px;
+    }
+
+    &__box {
+        margin-top: 20px;
+
+        @media(max-width: 1024px) {
+            margin-top: 15px;
+        }
+
+        @media(max-width: 620px) {
+            margin-top: 11px;
+        }
+    }
+
+    &__par {
+        @media(max-width: 800px) {
+            line-height: 28px;
+        }
+
+        @media(max-width: 620px) {
+            max-width: 256px;
+        }
+    }
+
+    &__bloc {
+        margin: 0 90px;
+
+        @media(max-width: 1235px) {
+            margin: 0 69px;
+        }
+
+        @media(max-width: 1024px) {
+            margin: 0 14px;
+        }
+
+        @media(max-width: 800px) {
+            display: flex;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -30px;
+            margin-top: 25px;
+        }
+
+        @media(max-width: 620px) {
+            margin-top: 30px;
+            margin-left: 0;
+        }
+
+        &:first-child {
+            margin-left: 0;
+
+            @media(max-width: 800px) {
+                margin-left: -30px;
+            }
+
+            @media(max-width: 620px) {
+                margin-left: 0px;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--soc {
+            max-width: 300px;
+            width: 100%;
+
+            @media(max-width: 800px) {
+                max-width: initial;
+                width: 100%;
+            }
+
+            .contacts__item {
+                @media(max-width: 800px) {
+                    max-width: initial;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__info {
+        max-width: 551px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &__bloc {
+            &:first-child {
+                max-width: 184px;
+                width: 100%;
+            }
+
+            &:last-child {
+                max-width: 187px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__soc {
+        max-width: 300px;
+    }
+
+    &__item {
+        @media(max-width: 800px) {
+            width: calc(50% - 30px);
+            margin-left: 30px;
+        }
+
+        @media(max-width: 620px) {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &:not(:first-child) {
+            margin-top: 51px;
+
+            @media(max-width: 800px) {
+                margin-top: 0;
+            }
+
+            @media(max-width: 620px) {
+                margin-top: 37px;
+            }
+        }
+
+        .marks {
+            @media(max-width: 800px) {
+                margin-top: 15px;
+            }
+
+            &__mark {
+                @media(max-width: 800px) {
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+
+            &__mark svg {
+                @media(max-width: 800px) {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &__header {
+        font-size: 23px;
+        line-height: 23px;
+        font-weight: 500;
+
+        @media(max-width: 1024px) {
+            font-size: 21px;
+            line-height: 21px;
+        }
+
+        @media(max-width: 620px) {
+            font-size: 19px;
+            line-height: 19px;
+        }
+    }
+
+    &__cover {
+        display: flex;
+        max-width: 1030px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+
+        @media(max-width: 1024px) {
+            justify-content: space-between;
+            max-width: 1030px;
+        }
+
+        @media(max-width: 800px) {
+            flex-direction: column;
+            max-width: 465px;
+            margin-right: auto;
+            margin-left: 0;
+            margin-top: -25px;
+        }
+
+        @media(max-width: 620px) {
+            margin-top: -30px;
+        }
+    }
+
+    .contacts__link {
+        &:hover {
+            color: $orange-2;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.list {
+    &__li {
+        position: relative;
+        padding-left: 20px;
+
+        &:after {
+            position: absolute;
+            content: "";
+            background-color: $purple-1;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            top: 13px;
+            left: 0px;
+            bottom: auto;
+        }
+
+
+
+        @media(max-width: 620px) {
+            padding-left: 15px;
+            line-height: 23px;
+        }
+
+        &:not(:first-child) {
+            @media(max-width: 1024px) {
+                margin-top: 5px;
+            }
+        }
+
+        &:after {
+            @media(max-width: 1024px) {
+                top: 8px;
+            }
+
+            @media(max-width: 620px) {
+                top: 9px;
+            }
+        }
+
+
+
+
+    }
+}

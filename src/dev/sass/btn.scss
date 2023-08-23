@@ -1,0 +1,196 @@
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 28px;
+    transition: .4s ease;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 18px;
+    width: auto;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: 'Gilroy', sans-serif;
+    opacity: 1;
+    overflow: hidden;
+    background-color: transparent;
+
+    @media(max-width: 1024px) {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 3px;
+        border: 2px solid transparent;
+        transition: .4s ease;
+    }
+
+    &--black {
+        position: relative;
+        color: white;
+        z-index: 1;
+
+        &:after {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url('../image/decor/btn-black.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+            opacity: 1;
+            transition: .4s ease;
+        }
+
+        &:hover {
+            color: $black;
+
+            &:after {
+                opacity: 0;
+            }
+
+            &::before {
+                border-color: $black;
+            }
+        }
+    }
+
+    &--gold {
+        position: relative;
+        color: white;
+        z-index: 1;
+
+        transition: .4s ease;
+
+        outline: none;
+
+        &:after {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url('../image/decor/btn-gold.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+            opacity: 1;
+            transition: .4s ease;
+        }
+
+        &:before {
+            position: absolute;
+            background-color: white;
+            top: 2px;
+            bottom: 2px;
+            left: 0;
+            right: 0;
+            width: calc(100% - 8px);
+            margin: auto;
+            opacity: 0;
+        }
+
+        &:hover {
+            span {
+                background-image: url('../image/decor/btn-gold.png');
+                background-clip: text;
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+
+
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+            transition: .4s ease;
+        }
+    }
+
+    &--blue {
+        position: relative;
+        color: white;
+        z-index: 1;
+
+        &:after {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url('../image/decor/btn-blue.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+            opacity: 1;
+            transition: .4s ease;
+        }
+
+        &:hover {
+            color: $blue-1;
+            outline-color: $blue-1;
+
+            &:after {
+                opacity: 0;
+            }
+
+            &::before {
+                border-color: $blue-1;
+            }
+        }
+    }
+
+    &--transparent {
+        background-color: transparent;
+
+        &:after {
+            opacity: 0;
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &--blue.btn--transparent {
+        &::before {
+            border-color: $blue-1;
+        }
+
+        &:hover::before {
+            border-color: transparent;
+        }
+    }
+
+}

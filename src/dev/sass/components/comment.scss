@@ -1,0 +1,35 @@
+.comment {
+    margin-top: 59px;
+
+    @media(max-width: 1024px) {
+        margin-top: 49px;
+    }
+
+    @media(max-width: 620px) {
+        margin-top: 43px;
+    }
+
+    &__title,
+    &__quote {
+        text-align: center;
+
+        @media(max-width: 620px) {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        @media(max-width: 620px) {
+            letter-spacing: -0.4px;
+        }
+    }
+
+    &__quote {
+        margin-top: 21px;
+
+        @media(max-width: 1024px) {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}

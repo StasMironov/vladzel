@@ -1,0 +1,56 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var bildboard_title = "Контакты";
+	- var bildboard_quote = "Мы будем рады любой обратной связи";
+	
+
+	- var portfolio = 'short';
+	- var bildboard_type = 'basic';
+
+	
+
+
+block content
+	include ../modules/bildboard
+	.contacts
+		.contacts__container.container(itemscope itemtype="http://schema.org/Organization")
+			.contacts__organization(style="display: none;" itemprop="name") VLADZEL
+			.contacts__cover(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+				.contacts__bloc
+					.contacts__item
+						.contacts__header График работы
+						.contacts__box
+							.contacts__par(itemprop="hoursAvailable") Пн - Пт | 9:00 - 19:00, 
+							.contacts__par(itemprop="hoursAvailable") Сб - Вс | 10:00 - 18:00
+					.contacts__item
+						.contacts__header Телефон
+						.contacts__box
+							a(href="tel:8(800)562-58-58" itemprop="telephone").contacts__par.contacts__link 8 (800) 562-58-58 
+				.contacts__bloc
+					.contacts__item
+						.contacts__header Адрес
+						.contacts__box
+							.contacts__par(itemprop="addressLocality") г. Магнитогорск,
+							.contacts__par(itemprop="streetAddress") ул. Электросети, д. 38 
+					.contacts__item
+						.contacts__header Почта
+						.contacts__box
+							a(href="mailto:Vladzel@gmail.com" itemprop="email").contacts__par.contacts__link Vladzel@gmail.com
+				.contacts__bloc.contacts__bloc--soc
+					.contacts__item
+						.contacts__header Мы в соцсетях
+						.contacts__box
+							.contacts__par Наши менеджеры готовы ответить на любые ваши вопросы 
+						include ../modules/marks
+	#map.map
+		
+
+				
+
+					
+						
+						
+	
+block script

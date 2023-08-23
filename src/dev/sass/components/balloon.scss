@@ -1,0 +1,66 @@
+.balloon {
+    font-family: 'Gilroy', sans-serif;
+    padding: 40px 0px 50px 28px;
+
+    @media(max-width: 1024px) {
+        padding: 0;
+    }
+
+    &__header {
+        font-size: 23px;
+        font-weight: 500;
+
+        @media(max-width: 1024px) {
+            font-size: 21px;
+            line-height: 21px;
+        }
+
+        @media(max-width: 620px) {
+            font-size: 19px;
+        }
+    }
+
+    &__text {
+        display: block;
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 20px;
+
+        @media(max-width: 1024px) {
+            font-size: 16px;
+            line-height: 16px;
+            margin-top: 15px;
+        }
+    }
+
+    &__bloc {
+        &:not(:first-child) {
+            margin-top: 35px;
+
+            @media(max-width: 620px) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    a {
+        &:hover {
+            color: $orange-2;
+        }
+    }
+}
+
+#map .ymaps-2-1-78-balloon__content {
+    padding: 0;
+
+    @media(max-width: 1024px) {
+        padding: 46px 17px;
+        margin-right: 0;
+    }
+}
+
+#map .ymaps-2-1-78-balloon {
+    @media(max-width: 1024px) {
+        left: -19px !important;
+    }
+}

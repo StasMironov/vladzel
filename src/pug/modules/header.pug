@@ -1,0 +1,36 @@
+include ../mixins
+header.header
+	.header__inner
+		.header__top
+			.header__container.container
+				.header__wrapper
+					.header__bloc
+						a(href="about.html").header__link О нас
+						a(href="contacts.html").header__link Контакты
+					.header__bloc.header__bloc--logo
+						a(href="/").header__logo
+							+svg('logo')
+	
+					.header__bloc.header__bloc--func
+						a(href="tel:8(800)562-58-58").header__link 8 (800) 562-58-58
+						.btn.btn--gold.js-btn-header.js-modal-order
+							span Рассчитать заказ
+						
+					.burger.js-burger
+						span
+						span
+						span
+		.header__bottom
+			.header__container.container
+				.header__wrapper
+					a(href="tel:8(800)562-58-58").header__phone 8 (800) 562-58-58
+					nav.header__menu(itemscope itemtype="http://www.schema.org/SiteNavigationElement")
+						a(href="catalog.html" itemprop="url").header__link.header__link--active Для дома и участка
+						a(href="catalog.html" itemprop="url").header__link Благоустройство территории
+						a(href="catalog.html" itemprop="url").header__link Для бизнеса
+						a(href="catalog.html" itemprop="url").header__link Строительство и производство
+						a(href="about.html" itemprop="url").header__link.header__link--hide О нас
+						a(href="contacts.html" itemprop="url").header__link.header__link--hide Контакты
+					include ../modules/marks
+
+	

@@ -1,0 +1,51 @@
+include ../mixins
+block variables
+
+doctype html
+html( lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		link(rel="stylesheet" type='text/css' href="css/main.css")
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+		
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=df6174f2-ef6c-4430-892d-682f2f6b11e9&lang=ru_RU" type="text/javascript"></script>
+		
+
+	
+		//script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+		
+		//- script
+		//- 	document.createElement('header');
+		//- 	document.createElement('nav');
+		//- 	document.createElement('section');
+		//- 	document.createElement('article');
+		//- 	document.createElement('aside');
+		//- 	document.createElement('footer');
+		
+
+		
+	body
+		.b-page
+			include ../modules/header
+			block content
+			include ../modules/footer
+		script(src="js/libs-min.js")
+		script(src="js/lightgallery.js")
+		script(src="js/smooth-scrollbar.js")
+		script(src="js/jquery.maskedinput.js")
+		script(src="js/main-min.js")
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
+		
+		
+		block script
+		

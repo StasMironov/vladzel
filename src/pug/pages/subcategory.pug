@@ -1,0 +1,212 @@
+extends ../layout/main
+
+
+block variables
+	- var title = 'Главная страница'
+	- var bildboard_img = "background-image:url(./image/bildbg/bg2.jpg)";
+	- var bildboard_title = "Мебель";
+	- var bildboard_quote = "лаконичность и индивидуальность";
+	- var bildboard_text = "А ещё реплицированные с зарубежных источников, а также современные исследования освещают чрезвычайно интересные огни.";
+	- var bildboard_type = "subcat";
+	- var n = 0;
+
+
+block content
+	include ../modules/bildboard
+	.category
+		.category__container.container
+			.category__grid
+				.category__left
+					.category__btn.js-btn-category
+						.category__title Категории
+						.category__ic
+							+svg('arr-btn')
+					form#ds_form.category__form
+						.category__filter
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox1" value="table">
+								<span>Столы</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox2" value="chair">
+								<span>Стулья, табуреты</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox3" value="armchair">
+								<span>Кресла, диваны</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox4" value="bed">
+								<span>Кровати</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox5" value="case">
+								<span>Шкафы, тумбы</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox6" value="shelves">
+								<span>Стеллажи, консоли, полки</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox7" value="wardrobe">
+								<span>Гардеробные, прихожие</span>
+							</label>
+
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox8" value="kitchen">
+								<span>Кухни</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox9" value="furniture">
+								<span>Мебель для ванной комнаты</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox10" value="doors">
+								<span>Перегородки, двери</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="checkbox11" value="stand">
+								<span>Подставки для растений</span>
+							</label>
+
+						button(type="submit").btn.btn--blue.btn--transparent Применить
+
+				.category__right
+					.category__items
+						.category__item(itemscope itemtype="http://schema.org/Offer")
+							.category__gallery
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide4.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+							.category__content
+								.category__header
+									.category__type Стулья, табуреты
+									.category__names(itemprop="name") Woodville Molli
+								.category__box
+									.category__bloc
+										.category__article Описание
+										.category__info(itemprop="description") После комфортного ночного сна ваша спальня или комната для гостей может легко превратиться в гостиную превратиться в гостиную.
+									.category__bloc
+										.category__article Материалы
+										.category__info Металл, дерево
+									.category__bloc
+										.category__article Цена
+										.category__info(itemprop="price") от 1 500 ₽
+								.category__func
+									a(href="card.html" itemprop="review").btn.btn--blue.btn--transparent Подробнее
+									a(href="javascript:void(0);").btn.btn--blue.js-modal-order Оформить заказ
+						.category__item(itemscope itemtype="http://schema.org/Offer")
+							.category__gallery
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide4.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+							.category__content
+								.category__header
+									.category__type Стулья, табуреты
+									.category__names(itemprop="name") Woodville Molli
+								.category__box
+									.category__bloc
+										.category__article Описание
+										.category__info(itemprop="description") После комфортного ночного сна ваша спальня или комната для гостей может легко превратиться в гостиную
+									.category__bloc
+										.category__article Материалы
+										.category__info Металл, дерево
+									.category__bloc
+										.category__article Цена
+										.category__info(itemprop="price") от 1 500 ₽
+								.category__func
+									a(href="card.html" itemprop="review").btn.btn--blue.btn--transparent Подробнее
+									a(href="javascript:void(0);").btn.btn--blue.js-modal-order Оформить заказ
+						
+						.category__item(itemscope itemtype="http://schema.org/Offer")
+							.category__gallery
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide4.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+							.category__content
+								.category__header
+									.category__type Стулья, табуреты
+									.category__names(itemprop="name") Woodville Molli
+								.category__box
+									.category__bloc
+										.category__article Описание
+										.category__info(itemprop="description") После комфортного ночного сна ваша спальня или комната для гостей может легко превратиться в гостиную
+									.category__bloc
+										.category__article Материалы
+										.category__info Металл, дерево
+									.category__bloc
+										.category__article Цена
+										.category__info(itemprop="price") от 1 500 ₽
+								.category__func
+									a(href="card.html" itemprop="review").btn.btn--blue.btn--transparent Подробнее
+									a(href="javascript:void(0);").btn.btn--blue.js-modal-order Оформить заказ
+						.category__item(itemscope itemtype="http://schema.org/Offer")
+							.category__gallery
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide4.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+							.category__content
+								.category__header
+									.category__type Стулья, табуреты
+									.category__names(itemprop="name") Woodville Molli
+								.category__box
+									.category__bloc
+										.category__article Описание
+										.category__info(itemprop="description") После комфортного ночного сна ваша спальня или комната для гостей может легко превратиться в гостиную
+									.category__bloc
+										.category__article Материалы
+										.category__info Металл, дерево
+									.category__bloc
+										.category__article Цена
+										.category__info(itemprop="price") от 1 500 ₽
+								.category__func
+									a(href="card.html" itemprop="review").btn.btn--blue.btn--transparent Подробнее
+									a(href="javascript:void(0);").btn.btn--blue.js-modal-order Оформить заказ
+						.category__item(itemscope itemtype="http://schema.org/Offer")
+							.category__gallery
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide4.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+								.category__pic
+									img(itemprop="image" src="/image/slider/slide5.jpg" alt="")
+							.category__content
+								.category__header
+									.category__type Стулья, табуреты
+									.category__names(itemprop="name") Woodville Molli
+								.category__box
+									.category__bloc
+										.category__article Описание
+										.category__info(itemprop="description") После комфортного ночного сна ваша спальня или комната для гостей может легко превратиться в гостиную
+									.category__bloc
+										.category__article Материалы
+										.category__info Металл, дерево
+									.category__bloc
+										.category__article Цена
+										.category__info(itemprop="price") от 1 500 ₽
+								.category__func
+									a(href="card.html" itemprop="review").btn.btn--blue.btn--transparent Подробнее
+									a(href="javascript:void(0);").btn.btn--blue.js-modal-order Оформить заказ
+	include ../modules/call								
+							
+
+
+
+				
+		
+
+	
+				
+block script

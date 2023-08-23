@@ -1,0 +1,32 @@
+.about {
+    margin-top: 73px;
+
+    @media(max-width:1024px) {
+        margin-top: 55px;
+    }
+
+    @media(max-width: 620px) {
+        margin-top: 47px;
+    }
+
+    &__quote {
+        font-size: 30px;
+        line-height: 45px;
+        max-width: 863px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        @media(max-width: 1024px) {
+            font-size: 22px;
+            line-height: 37px;
+        }
+
+        @media(max-width: 620px) {
+            font-size: 20px;
+            line-height: 28px;
+            max-width: initial;
+            text-align: left;
+        }
+    }
+}

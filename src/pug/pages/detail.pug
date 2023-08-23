@@ -1,0 +1,40 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var bildboard_img = "background-image:url(./image/bildbg/bg5.jpg)";
+	- var bildboard_title = "Лестничные конструкции";
+	- var bildboard_quote = "для дома и дачи";
+	- var bildboard_text = "А ещё реплицированные с зарубежных источников, а также современные исследования освещают чрезвычайно интересные огни."
+	- var bildboard_type = "detail";
+
+
+block content
+	include ../modules/bildboard
+	.detail
+		.detail__container.container
+			.content
+				h2 Лестницы
+				p А ещё реплицированные с зарубежных источников, современные исследования освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, объединены в целые кластеры себе подобных. Есть над чем задуматься: сделанные на базе интернет-аналитики выводы могут быть описаны максимально подробно! А ещё реплицированные с зарубежных источников, современные исследования освещают чрезвычайно интересные особенности картины в целом.
+			
+				.include
+					.include__item.include__item--big
+						img(src="/image/catalog/p6.jpg" alt="")
+					.include__item.include__item--small
+						img(src="/image/catalog/p7.jpg" alt="")
+					.include__item.include__item--small
+						img(src="/image/catalog/p8.jpg" alt="")
+				
+				h2 Перила
+				p А ещё реплицированные с зарубежных источников, современные исследования освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, объединены в целые кластеры себе подобных. Есть над чем задуматься: сделанные на базе интернет-аналитики выводы могут быть описаны максимально подробно! А ещё реплицированные с зарубежных источников, современные исследования освещают чрезвычайно интересные особенности картины в целом.
+
+				.include
+					.include__item.include__item--big
+						img(src="/image/catalog/p9.jpg" alt="")
+					.include__item.include__item--small
+						img(src="/image/catalog/p10.jpg" alt="")
+					.include__item.include__item--small
+						img(src="/image/catalog/p11.jpg" alt="")
+					
+	include ../modules/call
+block script

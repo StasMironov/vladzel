@@ -1,0 +1,46 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var set = 'basic'
+	- var portfolio = 'basic';
+
+block content
+	.bildboard
+		.bildboard__bg
+			.bildboard__img(style="background-image: url(../image/bildbg/bg.png)")
+			.bildboard__img.bildboard__img--tablet(style="background-image: url()")
+			.bildboard__img.bildboard__img--mobile(style="background-image: url()")
+		.bildboard__container.container
+			h1.bildboard__title.title-1 Мы создаем современные изделия из&nbsp;металла
+			.bildboard__quote для дома, бизнеса и производства
+			a(href="#ourwork").btn.btn--black Посмотреть наши работы
+
+	.services
+		.services__container.container
+			h2.services__title.title-2 Cпектр наших&nbsp;услуг
+			include ../modules/set
+
+	.advantage
+		.advantage__container.container
+			h3.advantage__title.title-3 Преимущества изделий на заказ
+			.advantage__cover
+				scrollbar(id="inner-scrollbar")
+					.advantage__items.scroll-content
+						.advantage__item 
+							.advantage__pic(style="background-image:url(../image/icon/set-adv.svg)")
+							.advantage__article Функциональность
+							.advantage__text Заказчик может выбирать наполнение по собственным требованиям.
+						.advantage__item 
+							.advantage__pic(style="background-image:url(../image/icon/set-adv.svg)")
+							.advantage__article Выбор расцветок
+							.advantage__text Клиент может выбрать любимый оттенок практически для любой конструкции.
+						.advantage__item 
+							.advantage__pic(style="background-image:url(../image/icon/set-adv.svg)")
+							.advantage__article Точные размеры
+							.advantage__text Возможность приобрести мебель на заказ по размерам любого помещения.
+							
+	include ../modules/portfolio
+	include ../modules/comment
+				
+block script

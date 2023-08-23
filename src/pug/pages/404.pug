@@ -1,0 +1,26 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var bildboard_title = "Контакты";
+	- var bildboard_quote = "Мы будем рады любой обратной связи";
+	- var portfolio = 'short';
+	- var bildboard_type = 'basic';
+
+	
+
+
+block content
+	.eampty
+		.eampty__container.container
+			.eampty__box(style="background-image:url(/image/404.jpg)")
+			.eampty__txt Упс, по данному запросу ничего не найдено
+			a(href="/").btn.btn--blue Вернуться на главную
+
+				
+
+					
+						
+						
+	
+block script

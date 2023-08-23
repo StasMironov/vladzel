@@ -1,0 +1,124 @@
+.policy {
+
+    @media(max-width: 620px) {
+        margin-top: 35px;
+        font-size: 14px;
+    }
+
+    &__wrapper {
+        margin-top: 30px;
+
+        @media(max-width: 1024px) {
+            margin-top: 32px;
+        }
+
+        @media(max-width: 620px) {
+            margin-top: 17px;
+        }
+    }
+
+    &__text {
+        @media(max-width: 1024px) {
+            line-height: 26px;
+        }
+
+        @media(max-width: 620px) {
+            line-height: 23px;
+        }
+    }
+
+    &__header {
+        font-size: 23px;
+        font-weight: 600;
+        margin-top: 31px;
+        margin-bottom: 18px;
+
+        @media(max-width: 1024px) {
+            font-size: 21px;
+            margin-bottom: 25px;
+        }
+
+        @media(max-width: 620px) {
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+
+    &__li {
+        @media(max-width: 1024px) {
+            line-height: 25px;
+        }
+
+        @media(max-width: 620px) {
+            line-height: 23px;
+        }
+
+        &:not(:first-child) {
+            margin-top: 13px;
+
+            @media(max-width: 1024px) {
+                margin-top: 14px;
+            }
+
+            @media(max-width: 620px) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__bloc {
+        &:not(:first-child) {
+            margin-top: 61px;
+
+            @media(max-width: 1024px) {
+                margin-top: 33px;
+            }
+
+            @media(max-width: 620px) {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    &__title {
+        @media(max-width: 620px) {
+            letter-spacing: -1.3px;
+            line-height: 40px;
+        }
+
+        @media(max-width: 374px) {
+            letter-spacing: -2px;
+        }
+    }
+
+    .list {
+        margin-top: 8px;
+
+        &__li {
+
+            @media(max-width: 620px) {
+                padding-left: 15px;
+                line-height: 23px;
+            }
+
+            &:not(:first-child) {
+                @media(max-width: 1024px) {
+                    margin-top: 5px;
+                }
+            }
+
+            &:after {
+                @media(max-width: 1024px) {
+                    top: 8px;
+                }
+
+                @media(max-width: 620px) {
+                    top: 9px;
+                }
+            }
+
+        }
+    }
+}
